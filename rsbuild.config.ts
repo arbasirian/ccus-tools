@@ -3,7 +3,11 @@ import { pluginReact } from '@rsbuild/plugin-react';
 
 export default defineConfig({
   plugins: [pluginReact()],
-
+  output: {
+    distPath: {
+      root: 'public', // This sets the output directory to "public"
+    },
+  },
   html: {
     tags: [
       {
