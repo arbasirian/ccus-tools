@@ -68,17 +68,19 @@ export const HomePage: React.FC = () => {
         <div className="features">
           <div className="feature">
             <IconChessKnight />
-            <h4>Global Network</h4>
-            <p>We partner with OEMs and distributors worldwide.</p>
+            <h4>Our Vision</h4>
+            <p>
+              To be the most trusted sourcing partner for energy equipment across traditional and
+              low-carbon markets.
+            </p>
           </div>
           <div className="feature">
             <IconMapCheck />
-            <h4>Middle East Expertise</h4>
-            <p>Track record across major regional oilfields.</p>
-          </div>
-          <div className="feature">
-            <h4>Fast Sourcing</h4>
-            <p>Rapid quote turnaround and equipment matching.</p>
+            <h4>Our Mission</h4>
+            <p>
+              To deliver technically sound, cost-effective, and timely equipment solutions by
+              leveraging a global vendor network and regional expertise.
+            </p>
           </div>
         </div>
       </section>
