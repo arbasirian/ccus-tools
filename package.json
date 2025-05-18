@@ -12,10 +12,13 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@rsbuild/plugin-styled-components": "^1.3.0",
     "@tabler/icons-react": "^3.33.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-router-dom": "^7.6.0"
+    "react-hook-form": "^7.56.4",
+    "react-router-dom": "^7.6.0",
+    "styled-components": "^6.1.18"
   },
   "devDependencies": {
     "@rsbuild/core": "^1.3.15",
