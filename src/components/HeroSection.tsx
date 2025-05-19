@@ -5,11 +5,6 @@ import styled from 'styled-components';
 
 const HeroContainer = styled.div`
   padding: 64px 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  @media (min-width: 992px) {
-    grid-template-columns: 1fr 1fr;
-  }
 `;
 
 const Flex = styled.div`
@@ -35,7 +30,6 @@ export const HeroSection: React.FC = () => {
             <Button variant="secondary">Get a Quote</Button>
           </Flex>
         </div>
-        <div />
       </HeroContainer>
     </section>
   );

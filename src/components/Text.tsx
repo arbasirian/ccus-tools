@@ -31,6 +31,22 @@ const Wrapper = styled.div<{ noMargin?: boolean }>`
     padding-bottom: 16px;
   }
 
+  &.title4 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 600;
+    color: #090b0e;
+    padding-bottom: 16px;
+  }
+
+  &.title5 {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #090b0e;
+    padding-bottom: 16px;
+  }
+
   &.body {
     font-size: 16px;
     font-weight: 400;
@@ -47,12 +63,13 @@ const Wrapper = styled.div<{ noMargin?: boolean }>`
 
 interface Props {
   children: React.ReactNode;
-  variant?: 'title1' | 'title2' | 'title3' | 'body';
+  variant?: 'title1' | 'title2' | 'title3' | 'title4' | 'title5' | 'body';
   noMargin?: boolean;
+  className?: string;
 }
-export const Text: React.FC<Props> = ({ children, variant, noMargin }) => {
+export const Text: React.FC<Props> = ({ children, variant = 'body', noMargin, className = '' }) => {
   return (
-    <Wrapper className={variant} noMargin={noMargin}>
+    <Wrapper className={[variant, className].join(' ')} noMargin={noMargin}>
       {children}
     </Wrapper>
   );
