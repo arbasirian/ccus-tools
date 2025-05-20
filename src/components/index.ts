@@ -6,3 +6,4 @@ export * from './AboutUs';
 export * from './Button';
 export * from './ContactSection';
 export * from './RoadMap';
+export * from './Categories';
