@@ -4,7 +4,6 @@ import './styles.css';
 import {
   Categories,
   ContactSection,
-  Customers,
   Header,
   HeroSection,
   WhatSetsUsApart,
@@ -21,7 +20,7 @@ export const HomePage: React.FC = () => {
     <>
       <Header />
       <HeroSection />
-      <Customers />
+      {/* <Customers /> */}
       <div className="bg-wrapper">
         <Categories />
         <ContentSection
