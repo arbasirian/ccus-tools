@@ -59,6 +59,11 @@ const Wrapper = styled.div<{ noMargin?: boolean }>`
     css`
       padding-bottom: 0 !important;
     `}
+  ${({ color }) =>
+    color &&
+    css`
+      color: ${color} !important;
+    `}
 `;
 
 interface Props {
@@ -66,10 +71,17 @@ interface Props {
   variant?: 'title1' | 'title2' | 'title3' | 'title4' | 'title5' | 'body';
   noMargin?: boolean;
   className?: string;
+  color?: string;
 }
-export const Text: React.FC<Props> = ({ children, variant = 'body', noMargin, className = '' }) => {
+export const Text: React.FC<Props> = ({
+  children,
+  variant = 'body',
+  noMargin,
+  className = '',
+  color,
+}) => {
   return (
-    <Wrapper className={[variant, className].join(' ')} noMargin={noMargin}>
+    <Wrapper className={[variant, className].join(' ')} noMargin={noMargin} color={color}>
       {children}
     </Wrapper>
   );

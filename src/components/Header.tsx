@@ -20,7 +20,7 @@ const Link = styled.button`
   border: none;
   background: none;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   color: #090b0e;
   display: inline-block;
@@ -45,7 +45,11 @@ export const Header: React.FC = () => {
   return (
     <Wrapper>
       <MenuContainer className="container">
+        <Link onClick={() => scrollToSection('categories')}>Equipment Categories</Link>
         <Link onClick={() => scrollToSection('about')}>About Us</Link>
+        <Link onClick={() => scrollToSection('sets-us-apart')}>What Sets Us Apart</Link>
+        <Link onClick={() => scrollToSection('vision')}>Our Vision</Link>
+        <Link onClick={() => scrollToSection('mission')}>Our Mission</Link>
         <Link onClick={() => scrollToSection('contact')}>Contact Us</Link>
       </MenuContainer>
     </Wrapper>

@@ -17,7 +17,7 @@ const ContactInfoWrapper = styled.div`
   background: #090b0e;
   border-radius: 8px;
   padding: 32px;
-  min-height: 600px;
+  min-height: 550px;
   * {
     color: #fff !important;
   }
@@ -28,13 +28,13 @@ const ContactFormWrapper = styled.div`
   background: #fff;
   border-radius: 8px;
   padding: 32px;
-  min-height: 600px;
+  min-height: 550px;
 `;
 
 const IconWrapper = styled.div`
-  width: 80px;
-  min-width: 80px;
-  height: 80px;
+  width: 64px;
+  min-width: 64px;
+  height: 64px;
   border-radius: 50%;
   background: #222326;
   display: flex;

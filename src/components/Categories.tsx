@@ -8,7 +8,7 @@ import SUB from '../static/SUB.webp';
 import CCUS from '../static/CCUS.webp';
 export const Categories: React.FC = () => {
   return (
-    <div>
+    <div id="categories">
       <div className="container">
         <Box display="flex" alignItems="center" justifyContent="center" margin=" 0 0 24px 0">
           <Text variant="title2">Equipment Categories</Text>

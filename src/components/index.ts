@@ -7,3 +7,6 @@ export * from './Button';
 export * from './ContactSection';
 export * from './RoadMap';
 export * from './Categories';
+export * from './WhatSetsUsApart';
+export * from './ContentSection';
+export * from './Footer';

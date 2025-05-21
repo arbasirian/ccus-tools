@@ -21,6 +21,8 @@ const Wrapper = styled.div<BoxProps>`
   background: ${({ background }) => background};
   background-color: ${({ backgroundColor }) => backgroundColor};
   width: ${({ width }) => width};
+  max-width: ${({ maxWidth }) => maxWidth};
+  min-width: ${({ minWidth }) => minWidth};
   height: ${({ height }) => height};
   flex: ${({ flex }) => flex};
   flex-wrap: ${({ flexWrap }) => flexWrap};
@@ -57,6 +59,8 @@ interface BoxProps {
   background?: string;
   backgroundColor?: string;
   width?: string;
+  maxWidth?: string;
+  minWidth?: string;
   height?: string;
   overflow?: string;
 }
