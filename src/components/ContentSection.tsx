@@ -24,9 +24,8 @@ interface Props {
   image: string;
   title: string;
   titleColor?: string;
-  description: string;
+  description: React.ReactNode;
   reverse?: boolean;
-  noBorderRadius?: boolean;
 }
 export const ContentSection: React.FC<Props> = ({
   id,

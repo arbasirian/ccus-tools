@@ -12,6 +12,11 @@ const BaseCard = styled.div`
 
 const IconCard = styled(BaseCard)`
   padding: 32px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 220px;
   .icon-wrapper {
     width: 64px;
     height: 64px;
@@ -23,12 +28,12 @@ const IconCard = styled(BaseCard)`
     align-items: center;
     justify-content: center;
     margin-bottom: 32px;
-    color: #4e2fda;
+    color: #027360;
     transition: all 0.2s ease;
   }
   &:hover {
     .icon-wrapper {
-      background-color: #4e2fda;
+      background-color: #027360;
       color: #fff;
     }
   }
@@ -50,7 +55,7 @@ interface Props {
   icon?: React.ReactNode;
   image?: string;
   title: string;
-  description: string;
+  description: React.ReactNode;
 }
 
 export const Card: React.FC<Props> = ({ icon, image, title, description }) => {

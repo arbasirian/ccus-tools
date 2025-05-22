@@ -27,10 +27,17 @@ export const HomePage: React.FC = () => {
           id="about"
           image={AboutUsImage}
           title="Empowering Energy Transitions with Trusted Equipment Sourcing."
-          description="CCUS Tools specializes in high-quality upstream oil and gas equipment sourcing, along
-            with advanced CCUS solutions. Our markets are in Saudi Arabia, UAE, Qatar, and Oman to
-            help streamline procurement and accelerate project timelines for energy transition and
-            low carbon economy."
+          description={
+            <>
+              With 20 years of field operations experience in the GCC, CCUS Tools specializes in
+              sourcing high-quality upstream oil and gas equipment, along with advanced carbon
+              capture, utilization, and storage (CCUS) solutions. We serve markets in{' '}
+              <b>Saudi Arabia, the UAE, Qatar, and Oman</b>—helping clients streamline procurement
+              and accelerate project timelines to support the energy transition and a low-carbon
+              economy. Our global network provides first-hand access to equipment stockpiles,
+              ensuring fast and reliable delivery.
+            </>
+          }
         />
         <WhatSetsUsApart />
         <div>

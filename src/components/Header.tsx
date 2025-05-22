@@ -1,5 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import { scrollToSection } from '../utils';
+
+import Logo from '../static/logo.png';
 
 const Wrapper = styled.div`
   position: sticky;
@@ -14,6 +17,9 @@ const MenuContainer = styled.div`
   display: flex;
   align-items: center;
   padding: 16px 0;
+  img {
+    height: 30px;
+  }
 `;
 
 const Link = styled.button`
@@ -22,34 +28,22 @@ const Link = styled.button`
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
-  color: #090b0e;
   display: inline-block;
   transition: all 0.4s;
   padding: 0 20px;
   &:hover {
-    color: #4e2fda;
+    color: #2a9d8f;
   }
 `;
 
 export const Header: React.FC = () => {
-  const scrollToSection = (section: string) => {
-    const element = document.getElementById(section);
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center',
-        inline: 'nearest',
-      });
-    }
-  };
   return (
     <Wrapper>
       <MenuContainer className="container">
-        <Link onClick={() => scrollToSection('categories')}>Equipment Categories</Link>
+        <img src={Logo} alt="CCUS Tools" />
+        <Link onClick={() => scrollToSection('home')}>Home</Link>
+        <Link onClick={() => scrollToSection('categories')}>Equipment</Link>
         <Link onClick={() => scrollToSection('about')}>About Us</Link>
-        <Link onClick={() => scrollToSection('sets-us-apart')}>What Sets Us Apart</Link>
-        <Link onClick={() => scrollToSection('vision')}>Our Vision</Link>
-        <Link onClick={() => scrollToSection('mission')}>Our Mission</Link>
         <Link onClick={() => scrollToSection('contact')}>Contact Us</Link>
       </MenuContainer>
     </Wrapper>

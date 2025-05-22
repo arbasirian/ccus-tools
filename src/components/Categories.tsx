@@ -22,12 +22,12 @@ export const Categories: React.FC = () => {
           <Card
             image={SUR}
             title="Surface Equipment"
-            description="Separators, Pumps, Pipelines, Injection Skids, Flowmeters"
+            description="Separators, Pumps, Injection Skids, Flowmeters, Additives & Catalysts"
           />
           <Card
             image={CCUS}
             title="CCUS & Hydrogen"
-            description="CO₂ Skids, Compressors, Injection Tools, Sensors"
+            description="CO₂ Skids, Compressors, Injection Tools, Sensors, Special alloys"
           />
         </Box>
       </div>

@@ -33,14 +33,16 @@ export const AboutUs: React.FC = () => {
           maxWidth="500px"
           height="100%"
         >
-          <Text variant="title1">
+          <Text variant="title2">
             Empowering Energy Transitions with Trusted Equipment Sourcing.
           </Text>
           <Text variant="body">
-            CCUS Tools specializes in high-quality upstream oil and gas equipment sourcing, along
-            with advanced CCUS solutions. Our markets are in Saudi Arabia, UAE, Qatar, and Oman to
-            help streamline procurement and accelerate project timelines for energy transition and
-            low carbon economy.
+            With 20 years of field operations experience in the GCC, CCUS Tools specializes in
+            sourcing high-quality upstream oil and gas equipment, along with advanced carbon
+            capture, utilization, and storage (CCUS) solutions. We serve markets in Saudi Arabia,
+            the UAE, Qatar, and Oman—helping clients streamline procurement and accelerate project
+            timelines to support the energy transition and a low-carbon economy. Our global network
+            provides first-hand access to equipment stockpiles, ensuring fast and reliable delivery.
           </Text>
         </Box>
       </Box>

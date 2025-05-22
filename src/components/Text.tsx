@@ -7,9 +7,9 @@ const Wrapper = styled.div<{ noMargin?: boolean }>`
   line-height: 24px;
 
   &.title1 {
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 700;
-    line-height: 70px;
+    line-height: 60px;
     color: #090b0e;
     padding-bottom: 16px;
   }
@@ -48,7 +48,7 @@ const Wrapper = styled.div<{ noMargin?: boolean }>`
   }
 
   &.body {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 26px;
     color: #3d4c5e;

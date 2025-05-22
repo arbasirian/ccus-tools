@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 
 const ContactInfoWrapper = styled.div`
   flex: 1;
-  background: #090b0e;
+  background: #027360;
   border-radius: 8px;
   padding: 32px;
   min-height: 550px;
@@ -48,7 +48,7 @@ const ContactItem = styled.div`
   gap: 24px;
   &:hover {
     ${IconWrapper} {
-      background: #4e2fda;
+      background: #2a9d8f;
       transition: all 0.4s;
     }
   }

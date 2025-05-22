@@ -3,6 +3,7 @@ import { Text } from './Text';
 import { Button } from './Button';
 import styled from 'styled-components';
 import BG from '../static/image-2.webp';
+import { scrollToSection } from '../utils';
 
 const SectionWrapper = styled.section`
   position: relative;
@@ -31,7 +32,7 @@ const Flex = styled.div`
 
 export const HeroSection: React.FC = () => {
   return (
-    <SectionWrapper id="hero">
+    <SectionWrapper id="home">
       <HeroContainer className="container">
         <div className="text-wrapper">
           <Text variant="title1">
@@ -42,8 +43,12 @@ export const HeroSection: React.FC = () => {
             with reliable global suppliers
           </Text>
           <Flex>
-            <Button variant="primary">Explore Equipment</Button>
-            <Button variant="secondary">Get a Quote</Button>
+            <Button variant="primary" onClick={() => scrollToSection('categories')}>
+              Explore Equipment
+            </Button>
+            <Button variant="secondary" onClick={() => scrollToSection('contact')}>
+              Get a Quote
+            </Button>
           </Flex>
         </div>
       </HeroContainer>
