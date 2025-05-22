@@ -2,6 +2,7 @@ import React from 'react';
 import { Text } from './Text';
 import styled from 'styled-components';
 import { useDeviceLayout } from '../hooks';
+import { Box } from './Box';
 
 const SectionWrapper = styled.section<{ reverse?: boolean }>`
   display: flex;
@@ -67,14 +68,14 @@ export const ContentSection: React.FC<Props> = ({
       <div className="image-container">
         <img src={image} alt={title} />
       </div>
-      <div>
+      <Box flex="1">
         <div className="content-container">
           <Text variant={isMobile ? 'title2' : 'title1'} color={titleColor}>
             {title}
           </Text>
           <Text variant="body">{description}</Text>
         </div>
-      </div>
+      </Box>
     </SectionWrapper>
   );
 };
