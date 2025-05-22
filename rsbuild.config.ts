@@ -10,6 +10,8 @@ export default defineConfig({
     },
   },
   html: {
+    title: 'CCUS Tools',
+
     tags: [
       {
         tag: 'link',
