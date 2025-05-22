@@ -11,7 +11,7 @@ export default defineConfig({
   },
   html: {
     title: 'CCUS Tools',
-
+    favicon: './src/static/favicon.ico',
     tags: [
       {
         tag: 'link',
