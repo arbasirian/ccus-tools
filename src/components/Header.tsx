@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { scrollToSection } from '../utils';
 
-import Logo from '../static/logo.png';
+import Logo from '../static/logo.svg';
+import { useDeviceLayout } from '../hooks';
 
 const Wrapper = styled.div`
   position: sticky;
@@ -11,12 +12,16 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   z-index: 2;
+  border-bottom: 1px solid #e0e0e0;
+  justify-content: flex-start;
 `;
 
 const MenuContainer = styled.div`
   display: flex;
   align-items: center;
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
   img {
     height: 30px;
   }
@@ -37,6 +42,17 @@ const Link = styled.button`
 `;
 
 export const Header: React.FC = () => {
+  const { isMobile } = useDeviceLayout();
+
+  if (isMobile) {
+    return (
+      <Wrapper>
+        <MenuContainer className="container">
+          <img src={Logo} alt="CCUS Tools" />
+        </MenuContainer>
+      </Wrapper>
+    );
+  }
   return (
     <Wrapper>
       <MenuContainer className="container">

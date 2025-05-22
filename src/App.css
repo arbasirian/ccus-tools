@@ -4,31 +4,29 @@ body {
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 540px;
   margin-right: auto;
   margin-left: auto;
-  width: 100%;
+
   padding: 0 12px;
 }
 
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+    width: 100%;
   }
 }
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+    width: 100%;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1320px;
+    width: 100%;
   }
 }
 

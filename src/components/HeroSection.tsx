@@ -18,10 +18,28 @@ const SectionWrapper = styled.section`
   .text-wrapper {
     max-width: 600px;
   }
+
+  @media (max-width: 768px) {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.5);
+    }
+
+    .text-wrapper {
+      position: relative;
+      z-index: 1;
+    }
+  }
 `;
 
 const HeroContainer = styled.div`
-  padding: 64px 0;
+  padding-top: 64px;
+  padding-bottom: 64px;
 `;
 
 const Flex = styled.div`

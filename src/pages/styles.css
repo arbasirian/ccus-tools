@@ -104,8 +104,14 @@
 
 .bg-wrapper {
   background: linear-gradient(180deg, #d6e0de, #f2f4f6);
-  padding: 120px 0;
+  padding-top: 80px;
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
-  gap: 120px;
+  gap: 80px;
+  @media (min-width: 992px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    gap: 120px;
+  }
 }

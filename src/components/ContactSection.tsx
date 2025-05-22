@@ -4,12 +4,17 @@ import styled from 'styled-components';
 import { ContactForm } from './ContactForm';
 import { Box } from './Box';
 import { IconMail, IconMap, IconPhone } from '@tabler/icons-react';
+import { useDeviceLayout } from '../hooks';
 
 const Wrapper = styled.div`
   display: flex;
   gap: 32px;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  @media (min-width: 992px) {
+    flex-wrap: nowrap;
+  }
 `;
 
 const ContactInfoWrapper = styled.div`
@@ -28,7 +33,12 @@ const ContactFormWrapper = styled.div`
   background: #fff;
   border-radius: 8px;
   padding: 32px;
-  min-height: 550px;
+
+  width: 100%;
+  @media (min-width: 992px) {
+    width: auto;
+    min-height: 550px;
+  }
 `;
 
 const IconWrapper = styled.div`

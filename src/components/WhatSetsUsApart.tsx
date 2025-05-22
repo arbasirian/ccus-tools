@@ -11,7 +11,14 @@ export const WhatSetsUsApart: React.FC = () => {
         <Box display="flex" alignItems="center" justifyContent="center" margin=" 0 0 24px 0">
           <Text variant="title2">What Sets Us Apart</Text>
         </Box>
-        <Box display="flex" justifyContent="center" alignItems="center" gap="16px">
+        <Box
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          gap="16px"
+          flexWrap="wrap"
+          desktop={{ flexWrap: 'nowrap' }}
+        >
           <Card
             icon={<IconWorld size={32} />}
             title="Global Vendor Network"

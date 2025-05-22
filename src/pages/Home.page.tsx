@@ -14,6 +14,16 @@ import {
 import AboutUsImage from '../static/about-us.webp';
 import MissionImage from '../static/mission.webp';
 import VisionImage from '../static/vision.webp';
+import styled from 'styled-components';
+
+const MVContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  @media (min-width: 992px) {
+    gap: 0;
+  }
+`;
 
 export const HomePage: React.FC = () => {
   return (
@@ -40,7 +50,7 @@ export const HomePage: React.FC = () => {
           }
         />
         <WhatSetsUsApart />
-        <div>
+        <MVContainer>
           <ContentSection
             id="vision"
             reverse
@@ -56,7 +66,7 @@ export const HomePage: React.FC = () => {
             description="To deliver technically sound, cost-effective, and timely equipment solutions by
             leveraging a global vendor network and regional expertise."
           />
-        </div>
+        </MVContainer>
         <ContactSection />
       </div>
       <Footer />

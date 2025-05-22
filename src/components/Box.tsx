@@ -1,7 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Wrapper = styled.div<BoxProps>`
+interface MediaProps extends BoxProps {
+  mobile?: BoxProps;
+  tablet?: BoxProps;
+  desktop?: BoxProps;
+  desktopLg?: BoxProps;
+}
+
+const Wrapper = styled.div<MediaProps>`
   display: ${({ display }) => display};
   flex-direction: ${({ flexDirection }) => flexDirection};
   justify-content: ${({ justifyContent }) => justifyContent};
@@ -28,6 +35,16 @@ const Wrapper = styled.div<BoxProps>`
   flex-wrap: ${({ flexWrap }) => flexWrap};
   align-content: ${({ alignContent }) => alignContent};
   overflow: ${({ overflow }) => overflow};
+
+  @media (min-width: 768px) {
+    flex-wrap: ${({ tablet }) => tablet?.flexWrap};
+  }
+  @media (min-width: 992px) {
+    flex-wrap: ${({ desktop }) => desktop?.flexWrap};
+  }
+  @media (min-width: 1200px) {
+    flex-wrap: ${({ desktopLg }) => desktopLg?.flexWrap};
+  }
 `;
 
 interface BoxProps {
@@ -65,7 +82,7 @@ interface BoxProps {
   overflow?: string;
 }
 
-interface Props extends React.HTMLAttributes<HTMLDivElement>, BoxProps {
+interface Props extends React.HTMLAttributes<HTMLDivElement>, MediaProps {
   children: React.ReactNode;
   className?: string;
 }

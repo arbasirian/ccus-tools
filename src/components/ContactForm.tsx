@@ -25,6 +25,8 @@ const Input = styled.input`
   border: 1px solid #e6e6e6;
   border-radius: 8px;
   margin-top: 24px;
+  width: 100%;
+  box-sizing: border-box;
 `;
 
 const Select = styled.select`
@@ -37,6 +39,7 @@ const Select = styled.select`
   margin-top: 24px;
   width: 100%;
   background-color: white;
+  box-sizing: border-box;
 `;
 
 const TextArea = styled.textarea`
@@ -50,6 +53,7 @@ const TextArea = styled.textarea`
   margin-top: 24px;
   min-height: 120px;
   resize: vertical;
+  box-sizing: border-box;
 `;
 
 const ErrorMessage = styled.span`
